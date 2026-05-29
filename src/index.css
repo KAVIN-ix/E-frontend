@@ -1,0 +1,93 @@
+/* Google Font loaded in index.html */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary:       #4f46e5;
+  --primary-dark:  #3730a3;
+  --primary-light: #ede9fe;
+  --accent:        #f59e0b;
+  --danger:        #ef4444;
+  --success:       #10b981;
+  --text:          #1f2937;
+  --text-light:    #6b7280;
+  --border:        #e5e7eb;
+  --bg:            #f9fafb;
+  --white:         #ffffff;
+  --card-shadow:   0 2px 8px rgba(0,0,0,0.08);
+  --radius:        10px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+button { font-family: 'Inter', sans-serif; cursor: pointer; }
+input, textarea, select { font-family: 'Inter', sans-serif; }
+a { text-decoration: none; color: inherit; }
+
+/* shared button styles */
+.btn {
+  display: inline-block;
+  padding: 9px 20px;
+  border-radius: var(--radius);
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+.btn:active { transform: scale(0.98); }
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--primary-dark); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+}
+.btn-outline:hover { background: var(--primary-light); }
+
+.btn-danger {
+  background: var(--danger);
+  color: #fff;
+}
+.btn-danger:hover { background: #dc2626; }
+
+.btn-sm {
+  padding: 6px 14px;
+  font-size: 0.82rem;
+}
+
+/* shared input */
+.form-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+  background: var(--white);
+}
+.form-input:focus { border-color: var(--primary); }
+.form-input::placeholder { color: #aaa; }
+
+/* shared card */
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border);
+}

@@ -1,0 +1,134 @@
+.orders-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.orders-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.loading-msg {
+  text-align: center;
+  color: var(--text-light);
+  padding: 40px;
+}
+
+.orders-empty {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.orders-empty .empty-icon {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.orders-empty p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.order-card {
+  padding: 20px;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.order-id {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  font-family: monospace;
+}
+
+.order-date {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 3px;
+}
+
+.order-status {
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.order-item-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.88rem;
+}
+
+.order-item-img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.order-item-name {
+  flex: 1;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.order-item-qty {
+  color: var(--text-light);
+}
+
+.order-item-price {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.order-address {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  flex: 1;
+}
+
+.order-total {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.order-total strong {
+  color: var(--primary);
+}
